@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/asp-dotent-core-controller.props" />
-</Project>
