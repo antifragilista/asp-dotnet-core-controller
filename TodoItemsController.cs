@@ -3,9 +3,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-// [ApiController] 어노테이션은 이 클래스가 API 컨트롤러임을 나타냅니다. 이는 모델 상태 검증과 같은 기능을 자동으로 활성화합니다.
+// The [ApiController] annotation indicates that this class is an API controller.
+// It automatically enables features such as model state validation.
 [ApiController]
-// 컨트롤러 이름을 기반으로 라우트 자동 설정. [controller]는 컨트롤러의 이름으로 대체됩니다. 예를 들어 TodoItemsController는 "TodoItems"로 해석됩니다.
+// Automatic route configuration based on controller name.
+// The [controller] is replaced with the name of the controller.
+// For example, TodoItemsController translates to "TodoItems".
 [Route("[controller]")]
 // [Route("todoitems")]
 public class TodoItemsController : ControllerBase
