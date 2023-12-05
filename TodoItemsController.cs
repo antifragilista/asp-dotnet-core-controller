@@ -12,6 +12,7 @@ public class TodoItemsController : ControllerBase
 {
     private readonly TodoDb _context;
 
+    // The TodoDb type object is received as a parameter, which is automatically injected by the ASP.NET Core's Dependency Injection (DI) system.
     public TodoItemsController(TodoDb db)
     {
         _context = db;
